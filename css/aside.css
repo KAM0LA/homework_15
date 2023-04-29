@@ -1,0 +1,104 @@
+aside {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: var(--aside-width);
+  border-right: 1px solid black;
+  overflow: auto;
+  background: #363740;
+  transition: var(--close-time);
+  -webkit-transition: var(--close-time);
+  -moz-transition: var(--close-time);
+  -ms-transition: var(--close-time);
+  -o-transition: var(--close-time);
+}
+.logo {
+  margin-bottom: 70px;
+  height: var(--header-height);
+}
+
+.logo img {
+  margin-top: 10px;
+}
+a {
+  text-decoration: none;
+}
+.logo span {
+  margin-top: -20px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #a4a6b3;
+  opacity: 0.7;
+}
+.nav-item span {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #dde2ff;
+}
+aside ul {
+  list-style-type: none;
+}
+.nav-link {
+  display: block;
+  padding: 15px;
+  color: black;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.nav-link span {
+  margin-left: 15px;
+  opacity: 1;
+  transition: var(--close-time);
+  -webkit-transition: var(--close-time);
+  -moz-transition: var(--close-time);
+  -ms-transition: var(--close-time);
+  -o-transition: var(--close-time);
+}
+
+.close .nav-link span {
+  opacity: 0;
+}
+
+.switch {
+  width: 40px;
+  height: 20px;
+  padding: 2.5px;
+  border-radius: 10px;
+  appearance: none;
+  background-color: grey;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.switch::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: black;
+  transition: 0.2s linear;
+  cursor: pointer;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.switch:checked::after {
+  margin-left: 20px;
+  background-color: white;
+}

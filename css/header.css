@@ -1,0 +1,36 @@
+header {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+header {
+  width: 100%;
+  height: var(--header-height);
+}
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+.content{
+  margin-top: 33px;
+}
+.content p {
+  margin-left: 1023px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: 0.2px;
+  color: #252733;
+}
+.content img {
+  margin-left: 4px;
+  margin-top: -14px;
+}

@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  position: relative;
+}
+:root {
+  --aside-width: 250px;
+  --header-height: 70px;
+  --footer-height: 30px;
+  --close-time: 0.5s;
+}
+header,
+footer,
+main {
+  position: fixed;
+  margin-left: var(--aside-width);
+  transition: var(--close-time);
+  -webkit-transition: var(--close-time);
+  -moz-transition: var(--close-time);
+  -ms-transition: var(--close-time);
+  -o-transition: var(--close-time);
+}
+header,
+main {
+  padding: 15px;
+}

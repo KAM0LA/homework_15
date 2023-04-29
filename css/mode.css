@@ -1,0 +1,14 @@
+.dark > * {
+    background-color: black;
+  }
+  
+  .dark * {
+    color: white;
+  }
+  
+  .dark .hamburger svg {
+    fill: white;
+  }
+  .dark aside {
+    border-color: white;
+  }
